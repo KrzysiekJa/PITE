@@ -18,21 +18,3 @@ for port in range(port_low, port_high + 1):
     #   print("Found:", port)
     print("Return:", str(ret))
     s.close()
-    
-
-"""
-import socket
-
-IP = input("Podaj IP: ")
-Range = input("Zakres np. 5-100: ")
-
-PortLow = int(Range.split("-")[0])
-PortHigh = int(Range.split("-")[1])
-
-print("Skanuje", IP, "od", PortLow, "do", PortHigh)
-
-for port in range(PortLow, PortHigh + 1):
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    ret = s.connect_ex((IP, port))
-    print("Zwrocona wartosc: " + str(ret))
-    s.close()"""
